@@ -1,6 +1,6 @@
 # ultima Microscope Ome Xml Stage Location Extractor : UW-LOCI
 
--xml locaiton exttactor for Ultima Microscope OME-XML from tiff or env.
+-python script to extract location for Ultima Microscope OME-XML / tiff or env.
 
 ## root
 * Sequence >> Frame >> PVStateShard >> PVStateValue
