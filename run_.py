@@ -15,8 +15,8 @@ for i in dict_data['PVScan'][u'Sequence']:
         if j['PVStateShard'] is not None:
             for k in j['PVStateShard']['PVStateValue']['SubindexedValues']:
                 #print k['SubindexedValue']['@value'],','
-                d.append(k['SubindexedValue']['@value'])
-        else:
+                d.append(k['SubindexedValue']['@value']) # xyz
+        else: # first frame pvstate is written with parent.
             for j1 in i['PVStateShard']['PVStateValue']:
                 if 'SubindexedValues' in j1.keys():
                     for k in j1['SubindexedValues']:
